@@ -1,0 +1,9 @@
+.root {
+    height: inherit;
+    padding: 20px;
+    border-right: 1px solid;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

@@ -1,16 +1,18 @@
 {
-  "extends": "./base.json",
-  "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "module": "ESNext",
-    "lib": ["ESNext", "DOM"],
-    "sourceMap": true,
-    "resolveJsonModule": true,
-    "noEmit": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true
-  },
-  "exclude": ["node_modules"]
+    "extends": "./base.json",
+    "compilerOptions": {
+        "target": "ES2020",
+        "useDefineForClassFields": true,
+        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "module": "ESNext",
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "types": ["@testing-library/jest-dom", "jest"]
+    },
+    "exclude": ["node_modules"]
 }

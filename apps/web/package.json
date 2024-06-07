@@ -1,22 +1,55 @@
 {
-  "name": "web",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite --clearScreen false",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "lint": "eslint \"src/**/*.ts\""
-  },
-  "dependencies": {
-    "@repo/ui": "*"
-  },
-  "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
-    "eslint": "^8.57.0",
-    "typescript": "^5.3.3",
-    "vite": "^5.1.4"
-  }
+    "name": "web",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite --clearScreen false",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "lint": "eslint \"src/**/*.ts\"",
+        "test": "jest --config jest.config.ts --watch"
+    },
+    "dependencies": {
+        "@repo/ui": "*",
+        "@emotion/react": "^11.11.4",
+        "@emotion/styled": "^11.11.5",
+        "@mui/material": "^5.15.18",
+        "@mui/x-data-grid": "^7.5.0",
+        "@tanstack/react-query": "^5.37.1",
+        "axios": "^1.7.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-hook-form": "^7.51.5",
+        "react-router-dom": "^6.23.1",
+        "socket.io-client": "^4.7.5"
+    },
+    "devDependencies": {
+        "@repo/eslint-config": "*",
+        "@repo/typescript-config": "*",
+        "@babel/preset-env": "^7.24.6",
+        "@babel/preset-react": "^7.24.6",
+        "@tanstack/eslint-plugin-query": "^5.35.6",
+        "@testing-library/jest-dom": "^6.4.5",
+        "@testing-library/react": "^16.0.0",
+        "@types/jest": "^29.5.12",
+        "@types/react": "^18.2.66",
+        "@types/react-dom": "^18.2.22",
+        "@typescript-eslint/eslint-plugin": "^7.2.0",
+        "@typescript-eslint/parser": "^7.2.0",
+        "@vitejs/plugin-react": "^4.2.1",
+        "babel-jest": "^29.7.0",
+        "eslint": "^8.57.0",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react-refresh": "^0.4.6",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^29.7.0",
+        "jest-environment-jsdom": "^29.7.0",
+        "react-test-renderer": "^18.3.1",
+        "sass": "^1.77.2",
+        "ts-jest": "^29.1.4",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.2.2",
+        "vite": "^5.2.0"
+    }
 }

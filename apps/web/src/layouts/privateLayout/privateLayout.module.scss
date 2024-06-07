@@ -1,0 +1,9 @@
+.root {
+    display: grid;
+    grid-template-columns: 200px auto;
+    height: 100vh;
+
+    .container {
+        padding: 20px;
+    }
+}
